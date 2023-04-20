@@ -1,4 +1,10 @@
 <resources>
     <string name="app_name">AppBanco</string>
     <string name="title_activity_maps_uno">MapsActivityUno</string>
+
+    <string name="btnIngresar">Ingresar</string>
+    <string name="btnSucursales">Sucursales</string>
+    <string name="btnRecargas">Recargas</string>
+    <string name="btnRecargar">Recargar</string>
+    <string name="btnEntrar">Entrar</string>
 </resources>

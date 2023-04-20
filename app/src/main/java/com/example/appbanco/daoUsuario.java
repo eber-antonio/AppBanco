@@ -86,6 +86,16 @@ public class daoUsuario {
         return null;
     }
 
+    public Usuario getUsuarioById(int id){
+        lista=selectUsuario();
+        for (Usuario us:lista) {
+            if(us.getId()==id){
+                return us;
+            }
+        }
+        return null;
+    }
+
     public boolean updateUsuario(Usuario u) {
         if(buscar(u.getUsuario())==1){
             ContentValues cv = new ContentValues();
@@ -100,6 +110,6 @@ public class daoUsuario {
     }
 
     public void deleteUsuario() {
-        sql.delete("usuario",null,null);
+            sql.delete("usuario",null,null);
     }
 }

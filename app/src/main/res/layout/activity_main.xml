@@ -20,7 +20,7 @@
         android:layout_weight="1"
         android:src="@mipmap/c" />
 
-    <EditText
+    <!--<EditText
         android:id="@+id/User"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -38,7 +38,7 @@
         android:layout_margin="20dp"
         android:layout_weight="1"
         android:hint="Password"
-        android:inputType="textPassword" />
+        android:inputType="textPassword" />-->
 
     <Button
         android:id="@+id/btnIngresar"
@@ -47,10 +47,12 @@
         android:layout_margin="20dp"
         android:layout_weight="1"
         android:background="#C0C0C0"
-        android:text="Ingresar"
+        android:onClick="onClick"
+        android:text="@string/btnIngresar"
         android:textColor="#ffffff"
         android:textSize="30dp"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        tools:text="@string/btnIngresar" />
 
     <Button
         android:id="@+id/btnSucursales"
@@ -59,10 +61,12 @@
         android:layout_margin="20dp"
         android:layout_weight="1"
         android:background="#A9A9A9"
-        android:text="Sucursales"
+        android:onClick="onClick"
+        android:text="@string/btnSucursales"
         android:textColor="#ffffff"
         android:textSize="30dp"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        tools:text="@string/btnSucursales" />
 
     <Button
         android:id="@+id/btnRecargas"
@@ -71,10 +75,12 @@
         android:layout_margin="20dp"
         android:layout_weight="1"
         android:background="#696969"
-        android:text="Recargas"
+        android:onClick="onClick"
+        android:text="@string/btnRecargas"
         android:textColor="#ffffff"
         android:textSize="30dp"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        tools:text="@string/btnRecargas" />
 
 
 

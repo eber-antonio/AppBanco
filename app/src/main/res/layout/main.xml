@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
@@ -35,19 +34,20 @@
         android:inputType="textPassword" />
 
     <Button
-        android:id="@+id/btnIngresar"
+        android:id="@+id/btnEntrar"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_margin="20dp"
         android:layout_weight="1"
         android:background="#A9A9A9"
-        android:text="Entrar"
+        android:text="@string/btnEntrar"
         android:textColor="#ffffff"
         android:textSize="30dp"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        tools:text="@string/btnEntrar" />
 
     <Button
-        android:id="@+id/btnSucursales"
+        android:id="@+id/btnRegistrar"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_margin="20dp"

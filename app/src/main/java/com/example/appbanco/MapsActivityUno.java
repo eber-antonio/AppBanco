@@ -44,7 +44,6 @@ public class MapsActivityUno extends FragmentActivity implements OnMapReadyCallb
     public void onMapReady(GoogleMap googleMap) {
         mMap = googleMap;
 
-
         // Agregamos los marcadores de las sucursales y el movimiento de la camara
         LatLng sucursalUno = new LatLng(20.65, -103.40);
         mMap.addMarker(new MarkerOptions().position(sucursalUno).title("TreyerBank Plaza del Sol"));

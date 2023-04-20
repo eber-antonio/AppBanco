@@ -8,6 +8,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
+import com.example.appbanco.databinding.ActivityRecargasBinding;
+
 public class MainActivity extends AppCompatActivity {
 
     @Override
@@ -20,6 +22,7 @@ public class MainActivity extends AppCompatActivity {
         //Referencia para controlar la interfaz
         final Button btnIngresar = (Button)findViewById(R.id.btnIngresar);
         final Button btnSucursales = (Button)findViewById(R.id.btnSucursales);
+        final Button btnRecargas = (Button)findViewById(R.id.btnRecargas);
 
         //Implemento el evento click de Boton Ingresar
         btnIngresar.setOnClickListener(new View.OnClickListener() {
@@ -47,6 +50,25 @@ public class MainActivity extends AppCompatActivity {
 
                 //Comienzo el activity
                 startActivity(intent);
+            }
+
+        });
+
+        //Implemento el evento click de Boton Recargas
+        btnRecargas.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                //Creo el Intent
+                Intent intent = new Intent(MainActivity.this, MainRecargas.class);
+
+                //Creo la informacion que se pasara entre las actividades
+                Bundle b = new Bundle();
+
+                //Comienzo el activity
+                startActivity(intent);
+
+
+                Toast.makeText(MainActivity.this, "Recarga tu numero", Toast.LENGTH_SHORT).show();
+
             }
 
         });

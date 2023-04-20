@@ -21,14 +21,14 @@ public class Editar extends AppCompatActivity implements View.OnClickListener{
         super.onCreate(savedInstanceState);
         setContentView(R.layout.editar);
 
-    user = (EditText) findViewById(R.id.EdiUser);
-    pass = (EditText) findViewById(R.id.EdiPass);
-    nombre = (EditText) findViewById(R.id.EdiNombre);
-    apellido = (EditText) findViewById(R.id.EdiApellido);
-    btnActualizar = (Button) findViewById(R.id.btnEdiRegistrar);
-    btnCancelar = (Button) findViewById(R.id.btnEdiCancelar);
-    btnActualizar.setOnClickListener(this);
-    btnCancelar.setOnClickListener(this);
+        user = (EditText) findViewById(R.id.EdiUser);
+        pass = (EditText) findViewById(R.id.EdiPass);
+        nombre = (EditText) findViewById(R.id.EdiNombre);
+        apellido = (EditText) findViewById(R.id.EdiApellido);
+        btnActualizar = (Button) findViewById(R.id.btnEdiRegistrar);
+        btnCancelar = (Button) findViewById(R.id.btnEdiCancelar);
+        btnActualizar.setOnClickListener(this);
+        btnCancelar.setOnClickListener(this);
     }
 
     @Override
@@ -55,8 +55,8 @@ public class Editar extends AppCompatActivity implements View.OnClickListener{
             case R.id.btnEdiCancelar:
                 Intent i=new Intent(Editar.this, Inicio.class);
                 startActivity(i);
-            finish();
-            break;
+                finish();
+                break;
         }
     }
 }

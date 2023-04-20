@@ -47,6 +47,7 @@ daoUsuario dao;
 
                 } else{
                     Toast.makeText(this, "Usuario ya registrado!!!", Toast.LENGTH_SHORT).show();
+                    
                 }
 
                 break;
